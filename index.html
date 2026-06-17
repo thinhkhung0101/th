@@ -39,7 +39,7 @@
         const modal = document.getElementById('imageModal');
         const modalImg = document.getElementById('modalImg');
         modal.style.display = 'flex';
-        modalImg.src = element.src; // Lấy nguồn ảnh từ ảnh bạn đã click
+        modalImg.src = element.src; 
     }
 
     function closeModal() {
@@ -50,7 +50,6 @@
     const modalImg = document.getElementById('modalImg');
     const targetImg = document.getElementById('targetImage');
     
-    // Đặt nguồn ảnh từ ảnh ẩn vào modal
     modalImg.src = targetImg.src;
     modal.style.display = 'flex';
 }
@@ -144,12 +143,12 @@
     transform: scale(1.03); 
 }
 .modal { 
-    display: none; /* Mặc định ẩn */
+    display: none; 
     position: fixed; 
     z-index: 1000; 
     top: 0; left: 0; 
     width: 100%; height: 100%; 
-    background-color: rgba(0,0,0,0.9); /* Màu nền đen mờ */
+    background-color: rgba(0,0,0,0.9); 
     justify-content: center; 
     align-items: center; 
     cursor: zoom-out; 
@@ -223,9 +222,9 @@
           <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Bài thơ online</h3>
           <p class="text-sm text-slate-500 dark:text-pink-200/60 leading-relaxed mb-4">Sử dụng các thẻ định dạng văn bản cơ bản kết hợp CSS căn lề, tạo khối tài liệu nghệ thuật tiêu chuẩn.</p>
         </div>
-        <a href="https://tieuchi1194-sketch.github.io/web-html-baitap/" target="_blank" class="inline-flex items-center text-sm font-semibold text-brand-600 hover:text-brand-700 gap-1 group">
+        <button onclick="openProjectFrame('https://tieuchi1194-sketch.github.io/web-html-baitap/', 'Bài thơ online')" class="inline-flex items-center text-sm font-semibold text-brand-600 hover:text-brand-700 gap-1 group w-fit">
           Xem sản phẩm <i class="fa-solid fa-arrow-right text-xs transform group-hover:translate-x-1 transition-transform"></i>
-        </a>
+        </button>
       </div>
 
       <div class="bg-white dark:bg-[#2b1b24] border border-slate-100 dark:border-pink-900/30 rounded-2xl p-6 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
@@ -234,9 +233,9 @@
           <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Danh sách bài hát online</h3>
           <p class="text-sm text-slate-500 dark:text-pink-200/60 leading-relaxed mb-4">Quản lý cấu trúc dữ liệu dạng bảng (Table), tích hợp hệ thống danh mục âm nhạc trực quan.</p>
         </div>
-        <a href="https://thinhkhung0101.github.io/BaitapTKW/" target="_blank" class="inline-flex items-center text-sm font-semibold text-brand-600 hover:text-brand-700 gap-1 group">
+        <button onclick="openProjectFrame('https://thinhkhung0101.github.io/BaitapTKW/', 'Danh sách bài hát online')" class="inline-flex items-center text-sm font-semibold text-brand-600 hover:text-brand-700 gap-1 group w-fit">
           Xem sản phẩm <i class="fa-solid fa-arrow-right text-xs transform group-hover:translate-x-1 transition-transform"></i>
-        </a>
+        </button>
       </div>
 
       <div class="bg-white dark:bg-[#2b1b24] border border-slate-100 dark:border-pink-900/30 rounded-2xl p-6 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
@@ -245,9 +244,9 @@
           <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Đăng nhập trang ĐRL online</h3>
           <p class="text-sm text-slate-500 dark:text-pink-200/60 leading-relaxed mb-4">Thiết kế Form xác thực người dùng, tối ưu hóa trải nghiệm UI/UX nhập liệu trường học.</p>
         </div>
-        <a href="https://thinhkhung0101.github.io/lms-bu-i-03/" target="_blank" class="inline-flex items-center text-sm font-semibold text-brand-600 hover:text-brand-700 gap-1 group">
+        <button onclick="openProjectFrame('https://thinhkhung0101.github.io/lms-bu-i-03/', 'Đăng nhập trang ĐRL online')" class="inline-flex items-center text-sm font-semibold text-brand-600 hover:text-brand-700 gap-1 group w-fit">
           Xem sản phẩm <i class="fa-solid fa-arrow-right text-xs transform group-hover:translate-x-1 transition-transform"></i>
-        </a>
+        </button>
       </div>
 
       <div class="bg-white dark:bg-[#2b1b24] border border-slate-100 dark:border-pink-900/30 rounded-2xl p-6 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
@@ -256,23 +255,47 @@
           <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Thông tin đăng ký online</h3>
           <p class="text-sm text-slate-500 dark:text-pink-200/60 leading-relaxed mb-4">Thu thập thông tin phức tạp, ứng dụng các thuộc tính ràng buộc dữ liệu đầu vào chuẩn xác.</p>
         </div>
-        <a href="https://thinhkhung0101.github.io/qt1/" target="_blank" class="inline-flex items-center text-sm font-semibold text-brand-600 hover:text-brand-700 gap-1 group">
+        <button onclick="openProjectFrame('https://thinhkhung0101.github.io/qt1/', 'Thông tin đăng ký online')" class="inline-flex items-center text-sm font-semibold text-brand-600 hover:text-brand-700 gap-1 group w-fit">
           Xem sản phẩm <i class="fa-solid fa-arrow-right text-xs transform group-hover:translate-x-1 transition-transform"></i>
-        </a>
+        </button>
       </div>
 
-      <div class="bg-gradient-to-br from-brand-900 to-slate-900 dark:from-brand-800 dark:to-[#3a2834] text-white rounded-2xl p-6 shadow-md hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between md:col-span-2 lg:col-span-2">
+      <div class="bg-white dark:bg-[#2b1b24] border border-slate-100 dark:border-pink-900/30 rounded-2xl p-6 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
+        <div>
+          <div class="w-12 h-12 bg-sky-50 dark:bg-sky-950/30 text-sky-600 dark:text-sky-400 rounded-xl flex items-center justify-center text-xl mb-4 font-semibold"><i class="fas fa-mobile-screen"></i></div>
+          <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Thế giới di động</h3>
+          <p class="text-sm text-slate-500 dark:text-pink-200/60 leading-relaxed mb-4">Xây dựng cấu trúc layout và giao diện trang phân phối thiết bị di động thương mại điện tử.</p>
+        </div>
+        <button onclick="openProjectFrame('https://thinhkhung0101.github.io/tgdd/', 'Thế giới di động')" class="inline-flex items-center text-sm font-semibold text-brand-600 hover:text-brand-700 gap-1 group w-fit">
+          Xem sản phẩm <i class="fa-solid fa-arrow-right text-xs transform group-hover:translate-x-1 transition-transform"></i>
+        </button>
+      </div>
+
+      <div class="bg-gradient-to-br from-brand-900 to-slate-900 dark:from-brand-800 dark:to-[#3a2834] text-white rounded-2xl p-6 shadow-md hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between md:col-span-1 lg:col-span-1">
         <div>
           <span class="text-xs bg-brand-600 text-brand-50 px-2.5 py-1 rounded-md font-medium uppercase tracking-wider"><i class="fas fa-star mr-1"></i> Dự án tâm huyết</span>
           <h3 class="text-xl font-bold text-white mb-2 mt-4">Website Giới Thiệu Bản Thân (Portfolio)</h3>
-          <p class="text-sm text-brand-100/80 leading-relaxed mb-6">Trang cá nhân độc lập tích hợp, thể hiện kỹ năng nghệ thuật sáng tạo, hỗ trợ giao diện Dark Mode đa dạng và phong cách chuẩn IT.</p>
+          <p class="text-sm text-brand-100/80 leading-relaxed mb-6">Trang cá nhân độc lập tích hợp, thể hiện kỹ năng nghệ thuật sáng tạo.</p>
         </div>
-        <button onclick="navigateToPage('portfolioPage')" class="w-full sm:w-auto bg-brand-600 hover:bg-brand-500 text-white text-sm font-semibold px-6 py-3 rounded-xl transition-colors text-center inline-flex items-center justify-center gap-2 shadow-sm">
-          Khám phá Portfolio Ngay <i class="fa-solid fa-chevron-right text-xs"></i>
+        <button onclick="navigateToPage('portfolioPage')" class="w-full bg-brand-600 hover:bg-brand-500 text-white text-sm font-semibold px-6 py-3 rounded-xl transition-colors text-center inline-flex items-center justify-center gap-2 shadow-sm">
+          Khám phá Portfolio <i class="fa-solid fa-chevron-right text-xs"></i>
         </button>
       </div>
     </section>
   </main>
+
+
+  <div id="projectFramePage" class="hidden min-h-screen flex flex-col relative z-50 bg-slate-900">
+    <div class="bg-slate-800 border-b border-slate-700 px-4 h-14 flex items-center justify-between text-white shadow-sm shrink-0">
+      <button onclick="closeProjectFrame()" class="text-sm font-bold bg-brand-600 hover:bg-brand-700 px-4 py-2 rounded-xl transition-all flex items-center gap-1.5 shadow-sm">
+        <i class="fa-solid fa-arrow-left"></i> QUAY VỀ MENU CHÍNH
+      </button>
+      <span id="projectFrameTitle" class="font-bold text-sm md:text-base tracking-tight truncate max-w-xs md:max-w-none">Sản Phẩm Bài Tập</span>
+      <div class="w-24 hidden md:block"></div> </div>
+    <div class="flex-1 w-full h-full bg-white relative">
+      <iframe id="projectIframe" src="" class="w-full h-full absolute inset-0 border-none" allowfullscreen></iframe>
+    </div>
+  </div>
 
 
   <div id="portfolioPage" class="hidden min-h-screen flex flex-col relative z-10">
@@ -302,12 +325,12 @@
     <header class="bg-gradient-to-b from-brand-50 via-white to-slate-50 dark:from-[#2b1b24] dark:via-[#1f121a] dark:to-[#1f121a] pt-32 pb-20 px-4 text-center">
       <div class="max-w-3xl mx-auto">
         <div class="relative w-36 h-36 mx-auto mb-6 group">
-  <img src="huyentran.jpg" 
-       alt="Huyền Trân" 
-       class="zoomable w-full h-full rounded-full object-cover border-4 border-white dark:border-[#3a2834] shadow-md transition-all duration-500 group-hover:scale-110 group-hover:rotate-10 cursor-zoom-in"
-       onclick="openModal(this)">
-  <div class="absolute bottom-1 right-2 w-6 h-6 bg-emerald-500 border-4 border-white dark:border-[#3a2834] rounded-full"></div>
-</div>
+          <img src="huyentran.jpg" 
+               alt="Huyền Trân" 
+               class="zoomable w-full h-full rounded-full object-cover border-4 border-white dark:border-[#3a2834] shadow-md transition-all duration-500 group-hover:scale-110 group-hover:rotate-10 cursor-zoom-in"
+               onclick="openModal(this)">
+          <div class="absolute bottom-1 right-2 w-6 h-6 bg-emerald-500 border-4 border-white dark:border-[#3a2834] rounded-full"></div>
+        </div>
         <h2 id="dynamicWelcomeHeading" class="text-4xl md:text-5xl font-black text-slate-900 dark:text-white tracking-tight mb-4 uppercase">XIN CHÀO BẠN NHÉ!</h2>
         <div class="mb-6">
           <div class="text-lg font-bold text-brand-600 dark:text-brand-400 bg-brand-50 dark:bg-brand-900/30 px-4 py-1.5 rounded-full inline-block">
@@ -386,16 +409,15 @@
             <h4 class="font-bold text-slate-900 dark:text-white text-base mb-1 mt-2">Hoàn thành tốt chương trình học tập</h4>
             <p class="text-sm text-slate-500 dark:text-pink-200/60 leading-relaxed">Tập trung nghiên cứu sâu các đồ án chuyên ngành nâng cao và tích lũy thật nhiều kinh nghiệm thực hành thực tế.</p>
           </div>
-         <div class="relative p-6 border border-brand-200 dark:border-brand-900/50 rounded-2xl bg-slate-50/50 dark:bg-[#3a2834]/30 hover:scale-[1.02] transition-transform cursor-pointer" 
-     onclick="openModalFromTarget()">
-    <div class="absolute top-0 right-0 bg-slate-900 dark:bg-pink-900 text-white px-3 py-1 text-xs font-bold rounded-bl-xl rounded-tr-xl">Mục tiêu 2</div>
-    <h4 class="font-bold text-slate-900 dark:text-white text-base mb-1 mt-2">Trở thành PHÚ BÀ thực thụ</h4>
-    <p class="text-sm text-slate-500 dark:text-pink-200/60 leading-relaxed">
-        "Đang chờ ngày định mệnh đưa mình đến với thẻ đen quyền lực của một tổng tài." 
-        <span class="block text-brand-600 underline mt-2 text-xs font-bold italic">Nhấn vào đây để xem "Bằng chứng" ✨</span>
-    </p>
-    <img id="targetImage" src="phuba.png" class="hidden">
-</div>
+          <div class="relative p-6 border border-brand-200 dark:border-brand-900/50 rounded-2xl bg-slate-50/50 dark:bg-[#3a2834]/30 hover:scale-[1.02] transition-transform cursor-pointer" onclick="openModalFromTarget()">
+            <div class="absolute top-0 right-0 bg-slate-900 dark:bg-pink-900 text-white px-3 py-1 text-xs font-bold rounded-bl-xl rounded-tr-xl">Mục tiêu 2</div>
+            <h4 class="font-bold text-slate-900 dark:text-white text-base mb-1 mt-2">Trở thành PHÚ BÀ thực thụ</h4>
+            <p class="text-sm text-slate-500 dark:text-pink-200/60 leading-relaxed">
+                "Đang chờ ngày định mệnh đưa mình đến với thẻ đen quyền lực của một tổng tài." 
+                <span class="block text-brand-600 underline mt-2 text-xs font-bold italic">Nhấn vào đây để xem "Bằng chứng" ✨</span>
+            </p>
+            <img id="targetImage" src="phuba.png" class="hidden">
+          </div>
         </div>
       </div>
     </section>
@@ -422,7 +444,6 @@
 
 
   <div id="skillDetailPage" class="hidden min-h-screen flex flex-col relative z-10 pt-24 px-4 pb-12 max-w-4xl mx-auto">
-    
     <div class="flex items-center justify-between border-b border-slate-200 dark:border-pink-900/30 pb-4 mb-8">
       <button onclick="navigateToPage('portfolioPage')" class="group text-sm font-bold text-slate-600 dark:text-pink-200 hover:text-brand-500 inline-flex items-center gap-2 transition-colors">
         <i class="fa-solid fa-chevron-left group-hover:-translate-x-1 transition-transform"></i> QUAY LẠI PORTFOLIO
@@ -470,6 +491,7 @@
       document.getElementById("portalPage").classList.add("hidden");
       document.getElementById("portfolioPage").classList.add("hidden");
       document.getElementById("skillDetailPage").classList.add("hidden");
+      document.getElementById("projectFramePage").classList.add("hidden");
 
       if(pageId === 'portalPage') {
         document.getElementById("bubbleContainer").classList.remove("hidden");
@@ -484,6 +506,25 @@
         const name = currentGuestName ? currentGuestName : "bạn";
         document.getElementById("dynamicWelcomeHeading").innerText = `Chào mừng ${name} ghé thăm! ✨`;
       }
+    }
+
+    // TÍNH NĂNG MỚI: Mở dự án trong Iframe ngay trên trang
+    function openProjectFrame(url, title) {
+      document.getElementById("portalPage").classList.add("hidden");
+      document.getElementById("portfolioPage").classList.add("hidden");
+      document.getElementById("skillDetailPage").classList.add("hidden");
+      document.getElementById("bubbleContainer").classList.add("hidden");
+
+      document.getElementById("projectIframe").src = url;
+      document.getElementById("projectFrameTitle").innerText = title;
+      document.getElementById("projectFramePage").classList.remove("hidden");
+      window.scrollTo(0, 0);
+    }
+
+    // TÍNH NĂNG MỚI: Tắt iframe quay về Menu chính
+    function closeProjectFrame() {
+      document.getElementById("projectIframe").src = ""; // Xóa src để dừng tải ngầm
+      navigateToPage('portalPage');
     }
 
     // 3. HÀM XỬ LÝ CLICK ĐỂ XEM PROFILE CHI TIẾT
@@ -556,7 +597,7 @@
           </div>
           <div class="space-y-4 text-slate-600 dark:text-pink-100/80 leading-relaxed text-sm md:text-base">
             <p>Mình sở hữu một tình yêu đặc biệt với việc truyền tải cảm xúc thông qua những con chữ. Đối với mình, viết lách không chỉ là sắp xếp từ ngữ, mà là cách xây dựng những thế giới tinh thần đầy màu sắc và chạm đến trái tim người đọc.</p>
-            <p class="font-bold text-slate-800 dark:text-white">Thế mạnh viết lách:</p>
+            <p class="font-bold text-slate-800 dark:text-white">Th thế mạnh viết lách:</p>
             <ul class="list-disc pl-5 space-y-2 text-slate-500 dark:text-pink-200/60">
               <li>Xây dựng cốt truyện, kịch bản (Storytelling) lôi cuốn và tự nhiên.</li>
               <li>Sáng tác các bài viết tản văn, truyện ngắn giàu cảm xúc và góc nhìn cá nhân độc đáo.</li>
@@ -595,7 +636,7 @@
             </div>
           </div>
           <div class="space-y-4 text-slate-600 dark:text-pink-100/80 leading-relaxed text-sm md:text-base">
-            <p>Một sản phẩm nghệ thuật hay một dự án lớn tuyệt vời luôn cần sự kết hợp hài hòa từ nhiều khối óc. Mình luôn chủ động tương tác, biết lắng nghe các mảnh ghép ý kiến từ đồng đội để tìm ra tiếng nói chung tốt nhất.</p>
+            <p>Một sản phẩm nghệ thuật hay một dự án lớn tuyệt vời luôn cần sự kết hợp hài hòa từ many khối óc. Mình luôn chủ động tương tác, biết lắng nghe các mảnh ghép ý kiến từ đồng đội để tìm ra tiếng nói chung tốt nhất.</p>
             <p class="font-bold text-slate-800 dark:text-white">Phương châm làm việc nhóm:</p>
             <ul class="list-disc pl-5 space-y-2 text-slate-500 dark:text-pink-200/60">
               <li>Lắng nghe tích cực và tôn trọng sự khác biệt cá tính của từng thành viên.</li>
@@ -656,7 +697,7 @@
   </script>
   <div id="imageModal" class="modal" onclick="closeModal()">
     <img id="modalImg" src="" alt="Zoomed image">
-</div>
+  </div>
 </body>
 
 </html>
